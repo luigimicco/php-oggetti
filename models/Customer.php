@@ -74,10 +74,10 @@ class Customer
     public function buyProduct($product)
     {
         if ($this->credit_card->expire < date('Y'))
-            return 'Carta di credito scaduta.';
+            return 'Carta di credito scaduta. Da rinnovare.';
 
         if ($this->getBalance() < $product->price)
-            return 'Credito insufficiente';
+            return 'Credito insufficiente per questa operazione';
 
 
         if ($this->discount > 0) {
