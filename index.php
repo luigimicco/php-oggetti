@@ -10,7 +10,6 @@ $customer = new Customer("Luigi", "Micco", 53, $card, true);
 echo $customer->buyProduct($croccantini);
 
 $card->setBalance(200);
-echo $customer->buyProduct($bocconcini);
 echo "<br>";
 echo "Disponibilità: " . $customer->getBalance();
 
@@ -32,8 +31,3 @@ echo "</pre>";
 
 
 //echo $croccantini->getDescription();
-
-
-
-
-
