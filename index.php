@@ -6,7 +6,7 @@ $croccantini = new Food('croccantini', 50.0, "Croccantini per cani", "carne, mie
 $bocconcini = new Food('bocconcini', 30.0, "Bocconcini di carne", "carne");
 
 $card = new CreditCard(12345678901234567890, 2025, 30.00);
-$customer = new Customer("Luigi", "Micco", 53, $card, true);
+$customer = new Customer("Pippo", "Micco", 53, $card, true);
 echo $customer->buyProduct($croccantini);
 
 $card->setBalance(200);
