@@ -11,7 +11,7 @@ echo $customer->buyProduct($croccantini);
 
 $card->setBalance(200);
 echo "<br>";
-echo "Disponibilità: " . $customer->getBalance();
+echo "Disponibilità al momento: " . $customer->getBalance();
 
 /*
 echo "<br>";
